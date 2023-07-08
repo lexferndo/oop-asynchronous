@@ -1,0 +1,38 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+.syarat-nama, .syarat-umur, .syarat-uang{ 
+    font-weight: 200;
+    font-style: italic;
+}
+
+.form-label{
+    font-size: larger;
+}
+
+.judul-table{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.btn-submit{
+    padding: 10px 30px;
+    background-color:lightseagreen;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-size: large;
+}
+
+.btn-submit:hover{
+    background-color: white;
+    color: lightseagreen;
+    border: 2px solid lightseagreen;
+    font-size: large;
+}
+
+.footer{
+    font-size: 16px;
+    font-weight: 500;
+}

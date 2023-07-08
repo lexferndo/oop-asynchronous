@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <title>Homework Week 5 </title>
+</head>
+<body>
+
+  <div class="container mb-3 mt-5 text-center">
+    <h3>
+      Form Registrasi
+    </h3>
+  </div>
+    <div class="container">
+        <form method="submit">
+            <div class="mb-3">
+              <label for="nama" class="form-label">Nama</label>
+              <input type="text" class="form-control" id="nama">
+              <div id="syarat-nama" class="syarat-nama">*Minimal 10 karakter</div>
+            </div>
+
+            <div class="mb-3">
+              <label for="umur" class="form-label">Umur</label>
+              <input type="number" class="form-control" id="umur">
+              <div id="syarat-umur" class="syarat-umur">*Minimal 25 tahun</div>
+            </div>
+
+            <div class="mb-3">
+              <label for="uang" class="form-label">Uang Sangu</label>
+              <input type="number" class="form-control" id="uang">
+              <div id="syarat-uang" class="syarat-uang">*Minimal Rp. 100.000 - Rp. 1.000.000</div>
+            </div>
+
+          </form>
+
+          <button id="btn-submit" onclick="button()" class="btn-submit">Submit</button>
+    </div>
+    
+    <!-- -------------------------------------------------- -->
+
+    <div class="container mt-5">
+      <table class="table table-bordered">
+        <thead>
+          <tr class="judul-table text-center">
+            <td colspan="4"> List Pendaftar</td>
+          </tr>
+          <tr class="text-center">
+            <th scope="col">Nama</th>
+            <th scope="col">Umur</th>
+            <th scope="col">Uang Sangu</th>
+          </tr>
+        </thead>
+        <tbody class="table-group-divider text-center" id="table-pendaftar"></tbody>
+        <tfoot class="table-group-divider footer" id="table-ratarata">
+          <tr class="text-center">
+            <td colspan="2">Rata-Rata Pendaftar Memiliki Uang Sangu</td>
+            <td></td>
+          </tr>
+          <tr class="text-center">
+            <td colspan="2">Rata-Rata Pendaftar Memiliki Umur</td>
+            <td></td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+
+    
+    <script src="main.js"></script>
+</body>
+</html>
